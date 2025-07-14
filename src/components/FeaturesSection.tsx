@@ -51,17 +51,21 @@ const FeaturesSection = () => {
     <section id="features" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-pink-50/50"></div>
       
+      {/* Animated background elements */}
+      <div className="absolute top-10 right-10 w-20 h-20 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full animate-morphing-blob"></div>
+      <div className="absolute bottom-20 left-10 w-32 h-32 bg-gradient-to-r from-purple-400/10 to-pink-400/10 rounded-full animate-bounce-gentle"></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20 animate-slide-in-up">
-          <div className="inline-block glass-card px-6 py-3 rounded-full mb-6">
+          <div className="inline-block glass-card px-6 py-3 rounded-full mb-6 animate-scale-pulse">
             <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               ✨ Cutting-Edge Features
             </span>
           </div>
-          <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-5xl lg:text-6xl font-bold mb-6 animate-slide-in-up stagger-1">
             Built for the <span className="text-shimmer">Future</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in stagger-2">
             Experience next-generation DeFi tools designed for both beginners and professionals. 
             Every feature is crafted to make crypto trading intuitive and profitable.
           </p>
@@ -73,16 +77,13 @@ const FeaturesSection = () => {
             return (
               <div 
                 key={index}
-                className="group glass-card rounded-3xl p-8 hover:bg-white/25 transition-all duration-500 animate-card-hover interactive-element cursor-pointer"
-                style={{
-                  animationDelay: `${index * 100}ms`
-                }}
+                className={`group glass-card rounded-3xl p-8 hover:bg-white/25 transition-all duration-500 animate-card-hover interactive-element cursor-pointer animate-slide-in-up stagger-${(index % 6) + 1}`}
               >
                 <div className="relative mb-8">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
+                  <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 group-hover:animate-wiggle transition-all duration-300 shadow-lg`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce-gentle transition-opacity duration-300 flex items-center justify-center">
                     <span className="text-xs">✨</span>
                   </div>
                 </div>
@@ -96,7 +97,7 @@ const FeaturesSection = () => {
                 
                 <div className="mt-6 flex items-center text-sm font-medium text-[#201743] opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                   Learn more
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 group-hover:animate-bounce-gentle transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -106,12 +107,12 @@ const FeaturesSection = () => {
         </div>
 
         {/* Interactive CTA */}
-        <div className="text-center mt-20">
-          <div className="glass-card rounded-3xl p-12 max-w-2xl mx-auto interactive-element">
+        <div className="text-center mt-20 animate-slide-in-up stagger-6">
+          <div className="glass-card rounded-3xl p-12 max-w-2xl mx-auto interactive-element animate-glow-pulse">
             <h3 className="text-3xl font-bold mb-4 text-gray-900">Ready to explore?</h3>
             <p className="text-lg text-gray-600 mb-8">Join millions of users already using Tajir Dex</p>
-            <button className="gradient-primary text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 interactive-element">
-              Start Your Journey
+            <button className="gradient-primary text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 interactive-element group">
+              <span className="group-hover:animate-wiggle">Start Your Journey</span>
             </button>
           </div>
         </div>

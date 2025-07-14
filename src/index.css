@@ -49,7 +49,7 @@
   }
 }
 
-/* Modern animations and effects */
+/* Advanced animations and effects */
 @keyframes float-gentle {
   0%, 100% { transform: translateY(0px) rotateY(0deg); }
   50% { transform: translateY(-15px) rotateY(5deg); }
@@ -77,6 +77,37 @@
   }
 }
 
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes card-hover {
   from { transform: translateY(0) rotateX(0); }
   to { transform: translateY(-8px) rotateX(2deg); }
@@ -85,6 +116,61 @@
 @keyframes text-shimmer {
   0% { background-position: -200% center; }
   100% { background-position: 200% center; }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes scale-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes wiggle {
+  0%, 7%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(-3deg); }
+  20% { transform: rotate(3deg); }
+  25% { transform: rotate(-3deg); }
+  30% { transform: rotate(3deg); }
+  35% { transform: rotate(-1deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(0deg); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes morphing-blob {
+  0%, 100% { 
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; 
+    transform: translate3d(0, 0, 0) rotateZ(0deg);
+  }
+  34% { 
+    border-radius: 70% 60% 70% 30% / 50% 60% 30% 60%;
+    transform: translate3d(0, -5px, 0) rotateZ(-5deg);
+  }
+  67% { 
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; 
+    transform: translate3d(0, 5px, 0) rotateZ(5deg);
+  }
 }
 
 .animate-float-gentle {
@@ -99,8 +185,49 @@
   animation: slide-in-up 0.8s ease-out forwards;
 }
 
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
 .animate-card-hover:hover {
   animation: card-hover 0.3s ease-out forwards;
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 20s linear infinite;
+}
+
+.animate-scale-pulse {
+  animation: scale-pulse 2s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+.animate-typing {
+  animation: typing 3.5s steps(40, end), blink 0.75s ease-in-out infinite;
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 6s ease infinite;
+  background-size: 300% 300%;
+}
+
+.animate-morphing-blob {
+  animation: morphing-blob 8s ease-in-out infinite;
 }
 
 .text-shimmer {
@@ -150,6 +277,20 @@
 .interactive-element:hover {
   transform: translateY(-2px);
   filter: brightness(1.1);
+}
+
+/* Staggered animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* Parallax effect */
+.parallax {
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 /* Custom scrollbar */
