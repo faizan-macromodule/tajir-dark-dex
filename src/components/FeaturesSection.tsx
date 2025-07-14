@@ -1,55 +1,69 @@
 
-import { Shield, Lock, Globe, Smartphone, Zap, Users } from 'lucide-react';
+import { Shield, Lock, Globe, Smartphone, Zap, Users, Gift, Coins, TrendingUp } from 'lucide-react';
 
 const features = [
   {
-    icon: Shield,
-    title: 'Mystery Boxes',
-    description: 'Earn Your Quest Points and discover exclusive rewards in our gamified ecosystem.',
-    color: 'bg-blue-500'
+    icon: Gift,
+    title: 'Mystery Boxes & Rewards',
+    description: 'Earn exclusive NFTs, tokens, and rewards through our gamified quest system. Unlock rare collectibles as you trade.',
+    color: 'from-pink-500 to-rose-500',
+    interactive: true
   },
   {
-    icon: Lock,
-    title: 'Building on Trust',
-    description: 'Your assets are secured with military-grade encryption and advanced security protocols.',
-    color: 'bg-green-500'
+    icon: Shield,
+    title: 'Military-Grade Security',
+    description: 'Advanced encryption, biometric authentication, and multi-signature protection keep your assets ultra-secure.',
+    color: 'from-green-500 to-emerald-500',
+    interactive: true
   },
   {
     icon: Globe,
-    title: 'Multi-Chain Support',
-    description: 'Access millions of assets across 100+ blockchains with seamless cross-chain swaps.',
-    color: 'bg-purple-500'
-  },
-  {
-    icon: Smartphone,
-    title: 'Mobile-First Design',
-    description: 'Trade, stake, and manage your portfolio on-the-go with our intuitive mobile app.',
-    color: 'bg-orange-500'
+    title: 'Cross-Chain DeFi Hub',
+    description: 'Seamless access to 100+ blockchains with instant swaps, yield farming, and liquidity provision.',
+    color: 'from-blue-500 to-cyan-500',
+    interactive: true
   },
   {
     icon: Zap,
-    title: 'Lightning Fast',
-    description: 'Execute trades and swaps in seconds with our optimized trading engine.',
-    color: 'bg-yellow-500'
+    title: 'Lightning-Fast Trading',
+    description: 'Execute trades in milliseconds with our AI-powered routing engine and MEV protection.',
+    color: 'from-yellow-500 to-orange-500',
+    interactive: true
   },
   {
-    icon: Users,
-    title: 'Community Driven',
-    description: 'Join millions of users in the most trusted Web3 wallet community.',
-    color: 'bg-pink-500'
+    icon: TrendingUp,
+    title: 'Smart Portfolio Analytics',
+    description: 'AI-driven insights, risk assessment tools, and automated rebalancing for optimal portfolio performance.',
+    color: 'from-purple-500 to-violet-500',
+    interactive: true
+  },
+  {
+    icon: Coins,
+    title: 'Yield Optimization',
+    description: 'Maximize returns with automated yield farming, staking rewards, and DeFi strategy recommendations.',
+    color: 'from-indigo-500 to-purple-500',
+    interactive: true
   }
 ];
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
-            Powerful features for <span className="text-gradient">crypto enthusiasts</span>
+    <section id="features" className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-pink-50/50"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20 animate-slide-in-up">
+          <div className="inline-block glass-card px-6 py-3 rounded-full mb-6">
+            <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              ✨ Cutting-Edge Features
+            </span>
+          </div>
+          <h2 className="text-5xl lg:text-6xl font-bold mb-6">
+            Built for the <span className="text-shimmer">Future</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to manage, trade, and grow your crypto portfolio in one secure platform
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Experience next-generation DeFi tools designed for both beginners and professionals. 
+            Every feature is crafted to make crypto trading intuitive and profitable.
           </p>
         </div>
 
@@ -59,16 +73,47 @@ const FeaturesSection = () => {
             return (
               <div 
                 key={index}
-                className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+                className="group glass-card rounded-3xl p-8 hover:bg-white/25 transition-all duration-500 animate-card-hover interactive-element cursor-pointer"
+                style={{
+                  animationDelay: `${index * 100}ms`
+                }}
               >
-                <div className={`w-12 h-12 ${feature.color} rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                  <IconComponent className="w-6 h-6 text-white" />
+                <div className="relative mb-8">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
+                    <IconComponent className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-xs">✨</span>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-[#201743]">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-[#201743] transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
+                  {feature.description}
+                </p>
+                
+                <div className="mt-6 flex items-center text-sm font-medium text-[#201743] opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  Learn more
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
             );
           })}
+        </div>
+
+        {/* Interactive CTA */}
+        <div className="text-center mt-20">
+          <div className="glass-card rounded-3xl p-12 max-w-2xl mx-auto interactive-element">
+            <h3 className="text-3xl font-bold mb-4 text-gray-900">Ready to explore?</h3>
+            <p className="text-lg text-gray-600 mb-8">Join millions of users already using Tajir Dex</p>
+            <button className="gradient-primary text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 interactive-element">
+              Start Your Journey
+            </button>
+          </div>
         </div>
       </div>
     </section>
