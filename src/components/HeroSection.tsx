@@ -85,62 +85,16 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Interactive Phone */}
+          {/* Right Content - App Preview Image */}
           <div className="relative lg:ml-16 animate-slide-in-right">
-            <div className="relative animate-float-gentle">
-              <div className="w-80 h-[500px] gradient-primary rounded-[3rem] p-2 shadow-2xl animate-glow-pulse mx-auto">
-                <div className="w-full h-full bg-black/10 rounded-[2.5rem] p-6 backdrop-blur-sm relative overflow-hidden">
-                  {/* Phone content */}
-                  <div className="text-white space-y-6">
-                    <div className="flex justify-between items-center animate-slide-in-up stagger-1">
-                      <div className="text-sm opacity-75">Portfolio</div>
-                      <div className="flex space-x-2">
-                        <div className="w-3 h-3 bg-green-400 rounded-full animate-scale-pulse"></div>
-                        <div className="w-3 h-3 bg-white/40 rounded-full animate-bounce-gentle"></div>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2 animate-slide-in-up stagger-2">
-                      <div className="text-sm opacity-75">Total Balance</div>
-                      <div className="text-4xl font-bold">$84,247.82</div>
-                      <div className="text-green-400 text-sm font-medium flex items-center">
-                        <TrendingUp className="w-4 h-4 mr-1 animate-bounce-gentle" />
-                        +12.5% (24h)
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-4">
-                      {[
-                        { name: 'Bitcoin', symbol: 'BTC', amount: '2.1547', value: '$47,832', change: '+2.4%', color: 'bg-orange-500' },
-                        { name: 'Ethereum', symbol: 'ETH', amount: '12.847', value: '$28,490', change: '+1.8%', color: 'bg-blue-500' },
-                        { name: 'Solana', symbol: 'SOL', amount: '89.23', value: '$7,925', change: '+5.2%', color: 'bg-purple-500' },
-                      ].map((asset, index) => (
-                        <div 
-                          key={index} 
-                          className={`glass p-4 rounded-2xl flex justify-between items-center group hover:bg-white/20 transition-all cursor-pointer animate-slide-in-up stagger-${index + 3}`}
-                        >
-                          <div className="flex items-center space-x-3">
-                            <div className={`w-10 h-10 ${asset.color} rounded-full flex items-center justify-center group-hover:animate-scale-pulse`}>
-                              <span className="text-white text-xs font-bold">{asset.symbol[0]}</span>
-                            </div>
-                            <div>
-                              <div className="font-semibold text-sm">{asset.name}</div>
-                              <div className="text-xs opacity-60">{asset.amount} {asset.symbol}</div>
-                            </div>
-                          </div>
-                          <div className="text-right">
-                            <div className="font-semibold">{asset.value}</div>
-                            <div className="text-green-400 text-xs">{asset.change}</div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  {/* Floating elements */}
-                  <div className="absolute top-4 right-4 w-16 h-16 bg-white/10 rounded-full animate-scale-pulse"></div>
-                  <div className="absolute bottom-20 left-4 w-8 h-8 bg-blue-400/30 rounded-full animate-bounce-gentle"></div>
-                </div>
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#1B60E7]/20 to-[#0B0A2F]/20 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-700 animate-pulse-glow"></div>
+              <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-4 shadow-2xl border border-white/20 hover:scale-105 transition-all duration-700 animate-float">
+                <img 
+                  src="/lovable-uploads/acf24b47-ff98-452e-8541-94faf009fc88.png" 
+                  alt="Tajir Wallet App Interface" 
+                  className="w-full max-w-sm h-auto rounded-2xl shadow-lg"
+                />
               </div>
             </div>
           </div>
