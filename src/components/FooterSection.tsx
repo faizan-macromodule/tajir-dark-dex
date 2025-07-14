@@ -1,10 +1,9 @@
-
-import { Shield, Twitter, Github, MessageCircle, Mail, ArrowUpRight, Heart } from 'lucide-react';
+import { Twitter, Github, MessageCircle, Mail, ArrowUpRight, Heart } from 'lucide-react';
 
 const FooterSection = () => {
   return (
     <footer className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-[#201743] to-purple-900"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-[#0B0A2F] to-purple-900"></div>
       <div className="absolute inset-0 bg-black/50"></div>
       
       {/* Animated background elements */}
@@ -17,18 +16,22 @@ const FooterSection = () => {
             {/* Brand Section */}
             <div className="md:col-span-2 animate-slide-in-left">
               <div className="flex items-center space-x-3 mb-6 group">
-                <div className="w-14 h-14 gradient-primary rounded-2xl flex items-center justify-center group-hover:rotate-12 group-hover:animate-wiggle transition-transform duration-300 animate-glow-pulse">
-                  <Shield className="w-8 h-8 text-white" />
+                <div className="w-14 h-14 flex items-center justify-center group-hover:rotate-12 group-hover:animate-wiggle transition-transform duration-300">
+                  <img 
+                    src="/lovable-uploads/630a4ad5-ae09-42c8-ae92-be4b1785c129.png" 
+                    alt="Tajir Wallet Logo" 
+                    className="w-12 h-12 animate-glow-pulse"
+                  />
                 </div>
                 <div>
-                  <span className="text-3xl font-bold text-shimmer">Tajir Dex</span>
-                  <div className="text-sm text-blue-200 -mt-1">Next-Gen Crypto Wallet</div>
+                  <span className="text-3xl font-bold text-shimmer">Tajir Wallet</span>
+                  <div className="text-sm text-blue-200 -mt-1">Secure Crypto Wallet</div>
                 </div>
               </div>
               
               <p className="text-gray-300 mb-8 leading-relaxed text-lg animate-fade-in stagger-1">
-                The most trusted multi-chain Web3 wallet for millions of users worldwide. 
-                Experience the future of decentralized finance today.
+                The most trusted multi-chain crypto wallet for millions of users worldwide. 
+                Experience the future of decentralized finance with ultimate security.
               </p>
               
               <div className="flex space-x-4 animate-slide-in-up stagger-2">
@@ -126,7 +129,7 @@ const FooterSection = () => {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center space-x-2 mb-4 md:mb-0">
                 <p className="text-gray-300">
-                  © 2024 Tajir Dex. Made with
+                  © 2024 Tajir Wallet. Made with
                 </p>
                 <Heart className="w-4 h-4 text-red-400 animate-scale-pulse" />
                 <p className="text-gray-300">for the crypto community.</p>

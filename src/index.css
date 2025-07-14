@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern design system for Tajir Dex */
+/* Modern design system for Tajir Wallet */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 248 74% 20%;
+    --primary: 218 82% 49%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -24,7 +24,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 248 74% 20%;
+    --accent: 218 82% 49%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,14 +32,14 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 248 74% 20%;
+    --ring: 218 82% 49%;
 
     --radius: 0.5rem;
 
-    --tajir-primary: #201743;
-    --tajir-secondary: #6366f1;
+    --tajir-primary: #1B60E7;
+    --tajir-secondary: #0B0A2F;
     --tajir-accent: #3b82f6;
-    --tajir-glow: rgba(99, 102, 241, 0.3);
+    --tajir-glow: rgba(27, 96, 231, 0.3);
   }
 
   body {
@@ -57,11 +57,11 @@
 
 @keyframes glow-pulse {
   0%, 100% { 
-    box-shadow: 0 0 30px rgba(99, 102, 241, 0.2), 0 0 60px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 30px rgba(27, 96, 231, 0.2), 0 0 60px rgba(27, 96, 231, 0.1);
     transform: scale(1);
   }
   50% { 
-    box-shadow: 0 0 50px rgba(99, 102, 241, 0.4), 0 0 100px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 50px rgba(27, 96, 231, 0.4), 0 0 100px rgba(27, 96, 231, 0.2);
     transform: scale(1.02);
   }
 }
@@ -233,9 +233,9 @@
 .text-shimmer {
   background: linear-gradient(
     90deg,
-    var(--tajir-primary) 0%,
-    var(--tajir-secondary) 50%,
-    var(--tajir-primary) 100%
+    var(--tajir-secondary) 0%,
+    var(--tajir-primary) 50%,
+    var(--tajir-secondary) 100%
   );
   background-size: 200% auto;
   background-clip: text;
