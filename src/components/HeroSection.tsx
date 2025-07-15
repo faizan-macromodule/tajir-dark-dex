@@ -1,18 +1,20 @@
 
 import { Button } from '@/components/ui/button';
 import { Shield, Download, Smartphone, ArrowRight, Zap, TrendingUp, Star } from 'lucide-react';
+import { FaApple } from "react-icons/fa";
+import { BsAndroid2 } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
     <section className="min-h-screen pt-24 pb-20 relative overflow-hidden">
       {/* Background mesh gradient */}
       <div className="absolute inset-0 gradient-mesh opacity-60"></div>
-      
+
       {/* Floating background elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full animate-morphing-blob"></div>
       <div className="absolute bottom-40 right-20 w-24 h-24 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full animate-bounce-gentle"></div>
       <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-r from-green-400/20 to-blue-400/20 rounded-full animate-rotate-slow"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
           {/* Left Content */}
@@ -30,7 +32,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-6">
               <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="block text-gray-900 animate-slide-in-up stagger-1">Next-Gen</span>
@@ -39,27 +41,26 @@ const HeroSection = () => {
                   Experience
                 </span>
               </h1>
-              
+
               <p className="text-xl text-gray-600 max-w-xl leading-relaxed animate-fade-in stagger-4">
                 Tajir Dex is your gateway to the future of trading — a cutting-edge decentralized exchange with a powerful multi-chain wallet, full NFT support, seamless Web3 & DApp integration, and advanced swap, market & limit order capabilities.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-up stagger-5">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="gradient-primary text-white hover:opacity-90 group rounded-2xl px-8 py-4 text-lg font-semibold shadow-xl interactive-element animate-glow-pulse"
               >
-                <Download className="w-6 h-6 mr-3 group-hover:animate-bounce-gentle" />
+                <BsAndroid2 className="w-6 h-6 mr-3" />
                 Download Android
-                <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-2 border-[#201743] text-[#201743] hover:bg-[#201743] hover:text-white rounded-2xl px-8 py-4 text-lg font-semibold interactive-element"
               >
-                <Smartphone className="w-6 h-6 mr-3" />
+                <FaApple className="w-6 h-6 mr-3" />
                 Download IOS
               </Button>
             </div>
@@ -72,8 +73,8 @@ const HeroSection = () => {
                 { value: '99.9%', label: 'Uptime', icon: Shield },
                 { value: 'A+', label: 'Security Rating', icon: Star },
               ].map((stat, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className={`glass-card p-4 rounded-2xl text-center group hover:bg-white/25 transition-all duration-300 interactive-element animate-card-hover animate-slide-in-up stagger-${index + 1}`}
                 >
                   <stat.icon className="w-6 h-6 mx-auto mb-2 text-[#201743] group-hover:scale-110 group-hover:animate-wiggle transition-transform" />
@@ -89,9 +90,9 @@ const HeroSection = () => {
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#1B60E7]/20 to-[#0B0A2F]/20 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-700 animate-pulse-glow"></div>
               <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-4 shadow-2xl border border-white/20 hover:scale-105 transition-all duration-700 animate-float">
-                <img 
-                  src="/lovable-uploads/acf24b47-ff98-452e-8541-94faf009fc88.png" 
-                  alt="Tajir Wallet App Interface" 
+                <img
+                  src="/lovable-uploads/acf24b47-ff98-452e-8541-94faf009fc88.png"
+                  alt="Tajir Wallet App Interface"
                   className="w-full max-w-sm h-auto rounded-2xl shadow-lg"
                 />
               </div>

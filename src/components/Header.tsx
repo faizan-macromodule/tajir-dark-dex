@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Sparkles } from 'lucide-react';
+import { FaApple } from 'react-icons/fa';
+import { BsAndroid2 } from 'react-icons/bs';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,10 +47,12 @@ const Header = () => {
               variant="ghost"
               className="text-[#1B60E7] bg-white/50 rounded-xl interactive-element group"
             >
-              <Sparkles className="w-4 h-4 mr-2 group-hover:animate-wiggle" />
+
+              <BsAndroid2 className="w-6 h-6 mr-3" />
               Download Android
             </Button>
             <Button className="gradient-primary text-white hover:opacity-90 rounded-xl px-6 py-3 interactive-element shadow-lg animate-glow-pulse group">
+              <FaApple className="w-6 h-6 mr-3" />
               <span className="group-hover:animate-scale-pulse">Download iOS</span>
             </Button>
           </div>
