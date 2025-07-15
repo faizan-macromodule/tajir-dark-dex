@@ -13,10 +13,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3 group animate-slide-in-left">
             <div className="w-12 h-12 flex items-center justify-center transform group-hover:rotate-12 group-hover:animate-wiggle transition-transform duration-300">
-              <img 
-                src="/lovable-uploads/630a4ad5-ae09-42c8-ae92-be4b1785c129.png" 
-                alt="Tajir Wallet Logo" 
-                className="w-10 h-10 animate-glow-pulse"
+              <img
+                src="/lovable-uploads/Tajir wallet.png"
+                alt="Tajir Wallet Logo"
+                className="w-10 h-10"
               />
             </div>
             <div className="flex flex-col">
@@ -41,8 +41,8 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-3 animate-slide-in-right">
-            <Button 
-              variant="ghost" 
+            <Button
+              variant="ghost"
               className="text-[#1B60E7] bg-white/50 rounded-xl interactive-element group"
             >
               <Sparkles className="w-4 h-4 mr-2 group-hover:animate-wiggle" />
@@ -58,8 +58,8 @@ const Header = () => {
             className="md:hidden p-3 rounded-xl hover:bg-white/20 transition-colors interactive-element group animate-slide-in-right"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? 
-              <X className="w-6 h-6 group-hover:animate-wiggle" /> : 
+            {isMenuOpen ?
+              <X className="w-6 h-6 group-hover:animate-wiggle" /> :
               <Menu className="w-6 h-6 group-hover:animate-wiggle" />
             }
           </button>

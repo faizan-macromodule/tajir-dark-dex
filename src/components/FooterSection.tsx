@@ -1,27 +1,26 @@
 import { Twitter, Github, MessageCircle, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import TajirLogo from "../assets/tajirTechHub.svg"
 const FooterSection = () => {
   return (
     <footer className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-[#0B0A2F] to-purple-900"></div>
       <div className="absolute inset-0 bg-black/50"></div>
-      
+
       {/* Animated background elements */}
       <div className="absolute top-10 right-10 w-20 h-20 bg-white/5 rounded-full animate-morphing-blob"></div>
       <div className="absolute bottom-10 left-10 w-16 h-16 bg-purple-400/10 rounded-full animate-bounce-gentle"></div>
-      
+
       <div className="relative z-10 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start mb-12">
             {/* Brand Section */}
             <div className="mb-8 md:mb-0 animate-slide-in-left">
               <div className="flex items-center space-x-3 mb-6 group">
-                <div className="w-12 h-12 flex items-center justify-center group-hover:rotate-12 group-hover:animate-wiggle transition-transform duration-300">
-                  <img 
-                    src="/lovable-uploads/630a4ad5-ae09-42c8-ae92-be4b1785c129.png" 
-                    alt="Tajir Wallet Logo" 
-                    className="w-10 h-10 animate-glow-pulse"
+                <div className="w-12 h-12 flex items-center  justify-center group-hover:rotate-12 group-hover:animate-wiggle transition-transform duration-300">
+                  <img
+                    src="/lovable-uploads/Tajir wallet.png"
+                    alt="Tajir Wallet Logo"
+                    className="w-10 h-10 "
                   />
                 </div>
                 <div>
@@ -29,7 +28,7 @@ const FooterSection = () => {
                   <div className="text-sm text-blue-200 -mt-1">Secure Crypto Wallet</div>
                 </div>
               </div>
-              
+
               <p className="text-gray-300 leading-relaxed max-w-md animate-fade-in stagger-1">
                 The most trusted multi-chain crypto wallet for secure digital asset management.
               </p>
@@ -71,13 +70,13 @@ const FooterSection = () => {
                 </p>
               </div>
               <div className="flex space-x-6 text-gray-300 text-sm">
-                <Link 
+                <Link
                   to="/privacy-policy"
                   className="hover:text-white transition-colors interactive-element"
                 >
                   Privacy Policy
                 </Link>
-                <Link 
+                <Link
                   to="/terms-conditions"
                   className="hover:text-white transition-colors interactive-element"
                 >

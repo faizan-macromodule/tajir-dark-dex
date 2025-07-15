@@ -1,14 +1,13 @@
 
 import { Button } from '@/components/ui/button';
 import { TrendingUp, TrendingDown, ArrowUpRight, Zap, Target, PieChart } from 'lucide-react';
-import TajirLogo from "../assets/tajirTechHub.svg"
 
 const AssetsSection = () => {
   const cryptoAssets = [
     { name: 'Bitcoin', symbol: 'BTC', price: '$67,432', change: '+3.2%', positive: true, icon: '₿', color: 'from-orange-400 to-orange-600' },
     { name: 'Ethereum', symbol: 'ETH', price: '$3,247', change: '+2.8%', positive: true, icon: 'Ξ', color: 'from-blue-400 to-blue-600' },
     { name: 'Solana', symbol: 'SOL', price: '$142.34', change: '+8.5%', positive: true, icon: '◎', color: 'from-purple-400 to-purple-600' },
-    { name: 'Tajir Tech Hub', symbol: 'TJRM', price: '$0.00658', change: '-11.1%%', positive: false, icon: TajirLogo, color: 'from-blue-500 to-indigo-600' },
+    { name: 'Tajir Tech Hub', symbol: 'TJRM', price: '$0.00658', change: '-11.1%%', positive: false, icon: "lovable-uploads/Tajir wallet.png", color: 'from-blue-500 to-indigo-600' },
     { name: 'Polygon', symbol: 'MATIC', price: '$1.24', change: '+5.7%', positive: true, icon: '⬟', color: 'from-purple-500 to-pink-500' },
   ];
 
@@ -72,7 +71,7 @@ const AssetsSection = () => {
                         <div className="flex items-center space-x-4">
                           {asset.symbol === "TJRM" ?
                             <div className={`w-12 h-12 bg-gradient-to-r rounded-2xl flex items-center justify-center font-bold text-white text-lg group-hover:scale-110 group-hover:animate-wiggle transition-transform`}>
-                              <img src={asset.icon} className='w-full h-full' />
+                              <img src={asset.icon} className='w-full h-full p-1' />
                             </div>
                             :
                             <div className={`w-12 h-12 bg-gradient-to-r ${asset.color} rounded-2xl flex items-center justify-center font-bold text-white text-lg group-hover:scale-110 group-hover:animate-wiggle transition-transform`}>
