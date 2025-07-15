@@ -1,6 +1,6 @@
 import { Twitter, Github, MessageCircle, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import TajirLogo from "../assets/tajirTechHub.svg"
 const FooterSection = () => {
   return (
     <footer className="relative overflow-hidden">
@@ -63,7 +63,7 @@ const FooterSection = () => {
             <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
               <div className="text-center lg:text-left">
                 <p className="text-gray-300 text-sm mb-2">
-                  © 2024 Tajir Holding LTD. All rights reserved.
+                  © 2025 Tajir Holding LTD. All rights reserved.
                 </p>
                 <p className="text-gray-400 text-xs">
                   Office A, Ground Floor, Al Rifaa, Sheikh Mohammed Bin Zayed Road,<br />

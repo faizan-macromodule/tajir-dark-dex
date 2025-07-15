@@ -21,7 +21,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-shimmer">Tajir Wallet</span>
-              <span className="text-xs text-gray-500 -mt-1">Secure Crypto Wallet</span>
+              <span className="text-xs text-black -mt-1">Secure Crypto Wallet</span>
             </div>
           </div>
 
@@ -31,7 +31,7 @@ const Header = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className={`px-4 py-2 text-gray-700 hover:text-[#1B60E7] rounded-xl transition-all duration-300 hover:bg-white/20 interactive-element relative group animate-slide-in-up stagger-${index + 1}`}
+                className={`px-4 py-2 text-black hover:text-[#1B60E7] rounded-xl transition-all duration-300 hover:bg-white/20 interactive-element relative group animate-slide-in-up stagger-${index + 1}`}
               >
                 {item}
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-transparent via-[#1B60E7] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -43,7 +43,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-3 animate-slide-in-right">
             <Button 
               variant="ghost" 
-              className="text-[#1B60E7] hover:bg-white/20 rounded-xl interactive-element group"
+              className="text-[#1B60E7] bg-white/50 rounded-xl interactive-element group"
             >
               <Sparkles className="w-4 h-4 mr-2 group-hover:animate-wiggle" />
               Download Android
