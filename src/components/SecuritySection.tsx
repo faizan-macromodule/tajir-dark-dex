@@ -30,7 +30,8 @@ const SecuritySection = () => {
             </h2>
 
             <p className="text-xl mb-12 text-blue-100 leading-relaxed animate-fade-in stagger-2">
-              Security isn't an afterthought. It's the foundation. DEX Wallet is fortified with cutting-edge protocols and military-grade encryption, offering the level of protection expected by financial institutions.
+              Security isn't optional — it's the core of Tajir Dex.
+              From non-custodial architecture to military-grade encryption, every layer is built to protect your assets and privacy in the decentralized world.
             </p>
 
             <div className="space-y-8 mb-12">
@@ -38,22 +39,22 @@ const SecuritySection = () => {
                 {
                   icon: Lock,
                   title: 'End-to-End Encryption',
-                  description: 'Private keys and seed phrases are secured using AES-256 encryption—a standard trusted by governments and banks. No compromise, no backdoors.'
+                  description: 'our private keys and recovery phrases are secured using AES-256 encryption — the same gold standard trusted by banks and governments. No backdoors. No compromise.'
                 },
                 {
                   icon: Eye,
                   title: 'Advanced Biometric Authentication',
-                  description: 'Enhanced security through Face ID and Touch ID. Device-level biometric protection ensures only you have access to your assets.'
+                  description: 'Biometric security through Face ID and Touch ID ensures that only you can access your wallet and trading interface on your device.'
                 },
                 {
                   icon: Fingerprint,
                   title: 'True Non-Custodial Architecture',
-                  description: 'You hold the keys. Your assets are never stored on our servers—giving you complete control and true ownership over your funds.'
+                  description: 'You own your keys. Your funds and assets never touch our servers. Full control, full ownership — the way decentralized systems should be.'
                 },
                 {
                   icon: KeyRound,
                   title: 'In-App Session Lock & Custom PIN',
-                  description: 'Protect your wallet with a dedicated PIN and automatic session timeouts. A strong defense against unauthorized access—especially on shared or mobile devices.'
+                  description: 'Stay protected with dedicated PIN access and automatic session timeouts to secure your activity, especially on shared or mobile devices.'
                 }
               ].map((item, index) => (
                 <div

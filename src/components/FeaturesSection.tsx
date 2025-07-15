@@ -19,28 +19,28 @@ const features = [
   {
     icon: Globe,
     title: 'NFT Support Across Chains',
-    description: 'View, store, and manage digital collectibles with ease. Support for ERC-721, ERC-1155, and Solana NFTs—all displayed in a dedicated gallery enriched with metadata and portfolio insights.',
+    description: 'Collect, view, and manage NFTs easily. Support for ERC-721, ERC-1155, and Solana NFTs. Visualize and organize your collection in a dynamic, metadata-rich NFT gallery with portfolio insights.',
     color: 'from-blue-500 to-cyan-500',
     interactive: true
   },
   {
     icon: Zap,
     title: 'Web3 and DApp Connectivity',
-    description: 'Connect with decentralized applications directly from the wallet. Secure, session-managed integrations with WalletConnect and native in-app browsers for seamless Web3 access.',
+    description: 'Seamless DApp interaction. Connect directly to decentralized apps using WalletConnect and secure in-app sessions. Experience smooth integration with Web3 services from your wallet.',
     color: 'from-yellow-500 to-orange-500',
     interactive: true
   },
   {
     icon: TrendingUp,
     title: 'Cross-Platform by Design',
-    description: 'Developed using React, Next.js, and Flutter for high-performance mobile and web apps. Whether on iOS, Android, or desktop, users experience consistency and responsiveness at every interaction.',
+    description: 'Built for web and mobile—without compromise. Developed with React, Next.js, and Flutter for optimal performance across platforms. Whether on iOS, Android, or desktop, Tajir Dex ensures a consistent, responsive user experience.',
     color: 'from-purple-500 to-violet-500',
     interactive: true
   },
   {
     icon: Coins,
     title: 'Smart Third-Party Integrations',
-    description: 'Integrated with tools that matter—Apple Pay, Google Pay, Telegram, and more. Enabling smooth onboarding, user engagement, and broader accessibility to Web3.',
+    description: 'Integrated with the tools that matter. Connect with Apple Pay, Google Pay, Telegram, and more. Enable effortless onboarding, user engagement, and broader Web3 accessibility.',
     color: 'from-indigo-500 to-purple-500',
     interactive: true
   }
@@ -63,12 +63,10 @@ const FeaturesSection = () => {
             </span>
           </div>
           <h2 className="text-5xl font-bold mb-6 animate-slide-in-up stagger-1">
-            Purpose-Built for the Evolving World of <span className="text-shimmer">DeFi</span>
+            Purpose-Built for the Evolving World of <span className="text-shimmer">Decentralized Trading</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in stagger-2">
-            A comprehensive digital asset platform engineered for performance, security, and adaptability.
-            Whether you're new to crypto or managing complex portfolios,
-            DEX Wallet is built to empower every step of your Web3 journey
+            A powerful decentralized exchange and asset management platform built for performance, security, and adaptability. Whether you're new to crypto or a seasoned trader, Tajir Dex empowers every step of your Web3 journey.
           </p>
         </div>
 

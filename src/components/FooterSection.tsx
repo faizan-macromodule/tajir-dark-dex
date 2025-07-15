@@ -12,8 +12,8 @@ const FooterSection = () => {
 
       <div className="relative z-10 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-start mb-12">
-            {/* Brand Section */}
+          {/* <div className="flex flex-col md:flex-row justify-between items-start mb-12">
+          
             <div className="mb-8 md:mb-0 animate-slide-in-left">
               <div className="flex items-center space-x-3 mb-6 group">
                 <div className="w-12 h-12 flex items-center  justify-center group-hover:rotate-12 group-hover:animate-wiggle transition-transform duration-300">
@@ -34,7 +34,7 @@ const FooterSection = () => {
               </p>
             </div>
 
-            {/* Social Links */}
+            
             <div className="animate-slide-in-right">
               <h3 className="font-bold text-lg mb-4 text-blue-200">Connect With Us</h3>
               <div className="flex space-x-3">
@@ -55,10 +55,10 @@ const FooterSection = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Bottom Bar */}
-          <div className="border-t border-white/20 pt-8 animate-fade-in stagger-2">
+          <div className="pt-8 animate-fade-in stagger-2">
             <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
               <div className="text-center lg:text-left">
                 <p className="text-gray-300 text-sm mb-2">

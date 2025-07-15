@@ -41,8 +41,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-gray-600 max-w-xl leading-relaxed animate-fade-in stagger-4">
-                Unlock the future of DeFi with Tajir Dex - where cutting-edge security meets 
-                intuitive design. Trade, stake, and manage your crypto portfolio like never before.
+                Tajir Dex is your gateway to the future of trading — a cutting-edge decentralized exchange with a powerful multi-chain wallet, full NFT support, seamless Web3 & DApp integration, and advanced swap, market & limit order capabilities.
               </p>
             </div>
             
@@ -52,7 +51,7 @@ const HeroSection = () => {
                 className="gradient-primary text-white hover:opacity-90 group rounded-2xl px-8 py-4 text-lg font-semibold shadow-xl interactive-element animate-glow-pulse"
               >
                 <Download className="w-6 h-6 mr-3 group-hover:animate-bounce-gentle" />
-                Download Now
+                Download Android
                 <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
@@ -61,15 +60,15 @@ const HeroSection = () => {
                 className="border-2 border-[#201743] text-[#201743] hover:bg-[#201743] hover:text-white rounded-2xl px-8 py-4 text-lg font-semibold interactive-element"
               >
                 <Smartphone className="w-6 h-6 mr-3" />
-                Mobile App
+                Download IOS
               </Button>
             </div>
 
             {/* Interactive Stats */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
               {[
-                { value: '70M+', label: 'Active Users', icon: TrendingUp },
-                { value: '500+', label: 'Crypto Assets', icon: Zap },
+                { value: '100+', label: 'Active Users', icon: TrendingUp },
+                { value: '100+', label: 'Crypto Assets', icon: Zap },
                 { value: '99.9%', label: 'Uptime', icon: Shield },
                 { value: 'A+', label: 'Security Rating', icon: Star },
               ].map((stat, index) => (
