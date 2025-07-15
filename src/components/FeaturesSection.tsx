@@ -95,12 +95,6 @@ const FeaturesSection = () => {
                   {feature.description}
                 </p>
                 
-                <div className="mt-6 flex items-center text-sm font-medium text-[#201743] opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  Learn more
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 group-hover:animate-bounce-gentle transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
               </div>
             );
           })}

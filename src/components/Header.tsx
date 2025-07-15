@@ -46,10 +46,10 @@ const Header = () => {
               className="text-[#1B60E7] hover:bg-white/20 rounded-xl interactive-element group"
             >
               <Sparkles className="w-4 h-4 mr-2 group-hover:animate-wiggle" />
-              Login
+              Download Android
             </Button>
             <Button className="gradient-primary text-white hover:opacity-90 rounded-xl px-6 py-3 interactive-element shadow-lg animate-glow-pulse group">
-              <span className="group-hover:animate-scale-pulse">Download App</span>
+              <span className="group-hover:animate-scale-pulse">Download iOS</span>
             </Button>
           </div>
 
@@ -81,10 +81,10 @@ const Header = () => {
               <div className="flex flex-col space-y-3 pt-4 border-t border-white/20">
                 <Button variant="ghost" className="text-[#1B60E7] rounded-xl justify-start group">
                   <Sparkles className="w-4 h-4 mr-2 group-hover:animate-wiggle" />
-                  Login
+                  Download Android
                 </Button>
                 <Button className="gradient-primary text-white rounded-xl group">
-                  <span className="group-hover:animate-scale-pulse">Download App</span>
+                  <span className="group-hover:animate-scale-pulse">Download iOS</span>
                 </Button>
               </div>
             </nav>
