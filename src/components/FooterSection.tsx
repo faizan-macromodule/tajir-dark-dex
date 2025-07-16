@@ -12,7 +12,7 @@ const FooterSection = () => {
 
       <div className="relative z-10 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* <div className="flex flex-col md:flex-row justify-between items-start mb-12">
+          <div className="flex flex-col md:flex-row justify-between items-start mb-12">
           
             <div className="mb-8 md:mb-0 animate-slide-in-left">
               <div className="flex items-center space-x-3 mb-6 group">
@@ -39,14 +39,15 @@ const FooterSection = () => {
               <h3 className="font-bold text-lg mb-4 text-blue-200">Connect With Us</h3>
               <div className="flex space-x-3">
                 {[
-                  { icon: Twitter, label: 'Twitter', href: '#' },
-                  { icon: Github, label: 'GitHub', href: '#' },
-                  { icon: MessageCircle, label: 'Discord', href: '#' },
-                  { icon: Mail, label: 'Email', href: '#' },
+                  { icon: Twitter, label: 'Twitter', href: 'https://x.com/tajirwallet?s=21' }
+                  // { icon: Github, label: 'GitHub', href: '#' },
+                  // { icon: MessageCircle, label: 'Discord', href: '#' },
+                  // { icon: Mail, label: 'Email', href: '#' },
                 ].map((social, index) => (
                   <a
                     key={index}
                     href={social.href}
+                    target='_blank'
                     className={`w-10 h-10 glass-card rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 interactive-element group animate-scale-pulse stagger-${index + 1}`}
                     aria-label={social.label}
                   >
@@ -55,10 +56,10 @@ const FooterSection = () => {
                 ))}
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* Bottom Bar */}
-          <div className="pt-8 animate-fade-in stagger-2">
+          <div className="border-t border-b-gray-500 pt-8 animate-fade-in stagger-2">
             <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
               <div className="text-center lg:text-left">
                 <p className="text-gray-300 text-sm mb-2">

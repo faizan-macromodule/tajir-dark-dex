@@ -7,7 +7,7 @@ const AssetsSection = () => {
     { name: 'Bitcoin', symbol: 'BTC', price: '$116,247', change: '-3.6%', positive: false, icon: '₿', color: 'from-orange-400 to-orange-600' },
     { name: 'Ethereum', symbol: 'ETH', price: '$2,994.19', change: '-1.0%', positive: false, icon: 'Ξ', color: 'from-blue-400 to-blue-600' },
     { name: 'Solana', symbol: 'SOL', price: '$158.51', change: '-4.1%', positive: false, icon: '◎', color: 'from-purple-400 to-purple-600' },
-    { name: 'Tajir', symbol: 'TJRM', price: '$0.0065', change: '-11.1%', positive: false, icon: "lovable-uploads/Tajir wallet.png", color: 'from-blue-500 to-indigo-600' },
+    { name: 'Tajir', symbol: 'TJRM', price: '$0.0065', change: '-11.1%', positive: false, icon: "lovable-uploads/tajirTechHub.svg", color: 'from-blue-500 to-indigo-600' },
     { name: 'Polygon', symbol: 'MATIC', price: '$0.2238', change: '-5.7%', positive: false, icon: '⬟', color: 'from-purple-500 to-pink-500' },
   ];
 

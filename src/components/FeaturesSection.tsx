@@ -103,7 +103,7 @@ const FeaturesSection = () => {
         <div className="text-center mt-20 animate-slide-in-up stagger-6">
           <div className="glass-card rounded-3xl p-12 max-w-2xl mx-auto interactive-element animate-glow-pulse">
             <h3 className="text-3xl font-bold mb-4 text-gray-900">Ready to explore?</h3>
-            <p className="text-lg text-gray-600 mb-8">Join millions of users already using Tajir Dex</p>
+            <p className="text-lg text-gray-600 mb-8">Join millions of users already using Tajir Wallet</p>
             <button className="gradient-primary text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 interactive-element group">
               <span className="group-hover:animate-wiggle">Start Your Journey</span>
             </button>
