@@ -100,7 +100,7 @@ const AssetsSection = () => {
           <div className="glass-card rounded-3xl p-12 max-w-2xl mx-auto interactive-element animate-glow-pulse">
             <h3 className="text-3xl font-bold text-white mb-4">Start Trading Today</h3>
             <p className="text-blue-200 text-lg mb-8">
-              Join millions of traders and investors using Tajir Dex
+              Join millions of traders and investors using Tajir Wallet
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white rounded-2xl px-8 py-4 interactive-element group">

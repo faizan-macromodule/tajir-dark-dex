@@ -30,7 +30,7 @@ const SecuritySection = () => {
             </h2>
 
             <p className="text-xl mb-12 text-blue-100 leading-relaxed animate-fade-in stagger-2">
-              Security isn't optional — it's the core of Tajir Dex.
+              Security isn't optional — it's the core of Tajir Wallet.
               From non-custodial architecture to military-grade encryption, every layer is built to protect your assets and privacy in the decentralized world.
             </p>
 

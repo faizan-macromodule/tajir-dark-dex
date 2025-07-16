@@ -43,7 +43,7 @@ const HeroSection = () => {
               </h1>
 
               <p className="text-xl text-gray-600 max-w-xl leading-relaxed animate-fade-in stagger-4">
-                Tajir Dex is your gateway to the future of trading — a cutting-edge decentralized exchange with a powerful multi-chain wallet, full NFT support, seamless Web3 & DApp integration, and advanced swap, market & limit order capabilities.
+                Tajir Wallet is your gateway to the future of trading — a cutting-edge decentralized exchange with a powerful multi-chain wallet, full NFT support, seamless Web3 & DApp integration, and advanced swap, market & limit order capabilities.
               </p>
             </div>
 

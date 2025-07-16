@@ -33,7 +33,7 @@ const features = [
   {
     icon: TrendingUp,
     title: 'Cross-Platform by Design',
-    description: 'Built for web and mobile—without compromise. Developed with React, Next.js, and Flutter for optimal performance across platforms. Whether on iOS, Android, or desktop, Tajir Dex ensures a consistent, responsive user experience.',
+    description: 'Built for web and mobile—without compromise. Developed with React, Next.js, and Flutter for optimal performance across platforms. Whether on iOS, Android, or desktop, Tajir Wallet ensures a consistent, responsive user experience.',
     color: 'from-purple-500 to-violet-500',
     interactive: true
   },
@@ -66,7 +66,7 @@ const FeaturesSection = () => {
             Purpose-Built for the Evolving World of <span className="text-shimmer">Decentralized Trading</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in stagger-2">
-            A powerful decentralized exchange and asset management platform built for performance, security, and adaptability. Whether you're new to crypto or a seasoned trader, Tajir Dex empowers every step of your Web3 journey.
+            A powerful decentralized exchange and asset management platform built for performance, security, and adaptability. Whether you're new to crypto or a seasoned trader, Tajir Wallet empowers every step of your Web3 journey.
           </p>
         </div>
 
