@@ -72,6 +72,18 @@ const FooterSection = () => {
               </div>
               <div className="flex space-x-6 text-gray-300 text-sm">
                 <Link
+                  to="/faq"
+                  className="hover:text-white transition-colors interactive-element"
+                >
+                  FAQ
+                </Link>
+                <Link
+                  to="/contact"
+                  className="hover:text-white transition-colors interactive-element"
+                >
+                  Contact
+                </Link>
+                <Link
                   to="/privacy-policy"
                   className="hover:text-white transition-colors interactive-element"
                 >
